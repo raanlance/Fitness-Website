@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/Thunder-BoldLC.ttfs");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #d61c4e;
+  --seondary-color: #393e46;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+a {
+  text-decoration: none;
+}

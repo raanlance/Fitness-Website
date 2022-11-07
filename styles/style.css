@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/Thunder-BoldLC.ttfs");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #d61c4e;
+  --seondary-color: #393e46;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav svg {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.links {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+.links a {
+  color: white;
+  font-size: 2rem;
+  background: var(--main-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: "Thunder", sans-serif;
+}
+.logo img {
+  width: 3rem;
+}
+
+.front-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 100%), url("../assets/img/jpg/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.selling-point {
+  margin-top: 25vh;
+  font-family: "Thunder", sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+  text-align: center;
+}
+.selling-point h3 {
+  font-family: sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+  margin-top: 2rem;
+}
+.ctas button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.cta-main {
+  background-color: var(--main-color);
+}
+.cta-main a {
+  color: white;
+}
+
+.cta-sec {
+  background-color: var(--seondary-color);
+  color: white;
+}
+
+.classes {
+  color: var(--seondary-color);
+  text-align: center;
+  font-family: "Thunder", sans-serif;
+}
+
+.videos video {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.videos h3 {
+  position: absolute;
+  color: white;
+  background: rgba(214, 28, 78, 0.5);
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 2rem;
+  padding: 0.8rem 0;
+  width: 100%;
+}
+
+.imagine,
+.believe,
+.achieve {
+  position: relative;
+}
+
+.about {
+  color: var(--seondary-color);
+}
+.about h2 {
+  font-family: "Thunder", sans-serif;
+  text-align: center;
+}
+.about p {
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+.about img {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .front-page,
+.classes,
+.about {
+    padding: 5% 10%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+  .about {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about h2 {
+    text-align: start;
+  }
+}/*# sourceMappingURL=style.css.map */
